@@ -136,7 +136,7 @@ def main(args, c_args):
     """
 
     #generate corpus
-    """
+    
     nx_G = read_graph()
     G = node2vec.Graph(nx_G, args.directed, args.p, args.q)
     G.preprocess_transition_probs()
@@ -160,7 +160,7 @@ def main(args, c_args):
          +source_name+".txt -output ../emb/"+source_name+".emb "
          +source_name+"-vocab -alpha 0.10 -window 10 -cbow 0 -sample 1e-5 -threads 20 -binary 0 -iter 15",
          shell=True)
-    """
+    
     save_word_emb_with_name("../emb/"+source_name+".emb", "../json/"+source_name+"_with_name.json","../graph/"+source_name+"_id_name.net")
 
 
