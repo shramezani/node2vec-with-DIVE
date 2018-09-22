@@ -1,1 +1,1 @@
-# node2vec-with-DIVE-modified-skip-gram-
+# node2vec-with-DIVE(modified-skip-gram)
