@@ -157,7 +157,7 @@ def main(args, c_args):
 
     #learn_embeddings(walks)
     call("./../Modified_DIVE/word2vec -train ../corpus/"
-         +source_name+".txt -output ../emb/"+source_name+".emb -save-vocab "
+         +source_name+".txt -output ../emb/"+source_name+".emb "
          +source_name+"-vocab -alpha 0.10 -window 10 -cbow 0 -sample 1e-5 -threads 20 -binary 0 -iter 15",
          shell=True)
     """
